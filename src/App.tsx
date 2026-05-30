@@ -389,7 +389,7 @@ export default function App() {
       )}
 
       <footer className="site-footer">
-        <p>Rich Content Studio · Digital Marketing Agency · 2024</p>
+        <p>Content Studio · Digital Marketing Agency · 2026</p>
       </footer>
     </div>
   )
