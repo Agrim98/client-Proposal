@@ -18,6 +18,17 @@ function fmt(usd: number, currency: 'USD' | 'INR') {
   return `₹${inr.toLocaleString()}`
 }
 
+const PLAN_PRICES = {
+  starter:    { usd: 1000, inr: 50000 },
+  growth:     { usd: 1500, inr: 150000 },
+  enterprise: { usd: 2500, inr: 250000 },
+}
+
+function planPrice(plan: keyof typeof PLAN_PRICES, currency: 'USD' | 'INR') {
+  const p = PLAN_PRICES[plan]
+  return currency === 'USD' ? `$${p.usd.toLocaleString()}` : `₹${p.inr.toLocaleString()}`
+}
+
 export default function App() {
   const [tab, setTab] = useState<'why' | 'pipeline' | 'pricing'>('why')
   const [currency, setCurrency] = useState<'USD' | 'INR'>('USD')
@@ -204,8 +215,7 @@ export default function App() {
             {/* STARTER */}
             <div className="pricing-card">
               <div className="plan-tier">Starter</div>
-              <div className="plan-price">{fmt(500, currency)}<span>/day · 10-day package</span></div>
-              <div className="plan-total">Total package: <strong>{fmt(5000, currency)}</strong> for first 10 days</div>
+              <div className="plan-price">{planPrice('starter', currency)}<span>/month</span></div>
               <ul className="plan-features">
                 <li>5 stitched video ads per day (15–30 seconds each)</li>
                 <li>Cinematic motion from your existing photos & clips</li>
@@ -222,8 +232,7 @@ export default function App() {
             <div className="pricing-card featured">
               <div className="featured-badge">Most Popular</div>
               <div className="plan-tier">Growth</div>
-              <div className="plan-price">{fmt(1500, currency)}<span>/day · 10-day package</span></div>
-              <div className="plan-total">Total package: <strong>{fmt(15000, currency)}</strong> for 10 days</div>
+              <div className="plan-price">{planPrice('growth', currency)}<span>/month</span></div>
               <ul className="plan-features">
                 <li>5 stitched video ads per day (30 sec – 1 minute each)</li>
                 <li>Professional voiceover with brand narration in your tone</li>
@@ -239,8 +248,7 @@ export default function App() {
             {/* ENTERPRISE */}
             <div className="pricing-card enterprise">
               <div className="plan-tier">Enterprise</div>
-              <div className="plan-price">{fmt(2500, currency)}<span>/day · 10-day package</span></div>
-              <div className="plan-total">Total package: <strong>{fmt(25000, currency)}</strong> for 10 days</div>
+              <div className="plan-price">{planPrice('enterprise', currency)}<span>/month</span></div>
               <ul className="plan-features">
                 <li>5 stitched video ads per day (30 sec – 1 minute each)</li>
                 <li>Full revision & edit service — unlimited feedback rounds</li>
@@ -257,10 +265,9 @@ export default function App() {
 
           <div className="margin-math">
             <strong>The one-stop advantage:</strong> Traditional high-end photography + video production agencies charge
-            {' '}{fmt(2000, currency)}–{fmt(10000, currency)} per video — and take weeks to deliver. Standard production subscriptions alone run
-            {' '}{fmt(1000, currency)}–{fmt(2000, currency)}/month before any actual work begins. With us, your average production cost
-            is <strong>under {fmt(500, currency)} per day</strong> for 5 platform-ready ads. We replace the entire pipeline — brief, production,
-            edit, and publish — so your brand stays live every single day without the overhead.
+            {' '}{fmt(2000, currency)}–{fmt(10000, currency)} per video — and take weeks to deliver. With us, you get 5 platform-ready
+            video ads every single day as part of your monthly retainer. We replace the entire pipeline — brief,
+            production, edit, and publish — so your brand stays live without the overhead, the delays, or the crew.
           </div>
         </section>
       )}
