@@ -37,10 +37,10 @@ export default function App() {
     <div className="proposal">
       {/* Header */}
       <header className="site-header">
-        <div className="header-eyebrow">Digital Marketing Agency · Client Proposal · Hospitality Vertical</div>
-        <h1>The Studio Powering <span className="gold">Next-Gen Hospitality Ads</span></h1>
+        <div className="header-eyebrow">Digital Marketing Agency · Client Proposal</div>
+        <h1>The Studio Powering <span className="gold">Next-Gen Brand Ads</span></h1>
         <p className="header-sub">
-          From raw property photos and brand assets to platform-ready video ads — in minutes, not weeks.<br />
+          From raw photos and brand assets to platform-ready video ads — in minutes, not weeks.<br />
           One continuous pipeline. Zero crew. Zero studio.
         </p>
         <nav className="main-nav">
@@ -54,7 +54,7 @@ export default function App() {
       {tab === 'why' && (
         <section className="tab-section">
           <div className="section-eyebrow">The Business Case</div>
-          <h2>Why Hospitality Brands Win With Rich Video Content</h2>
+          <h2>Why Brands Win With Rich Video Content</h2>
           <p className="section-intro">
             Continuous promotion is not optional — it is the algorithm. Brands that publish rich visual content
             daily gain compounding reach that sporadic campaigns can never buy back. High-quality viewership is
@@ -69,8 +69,8 @@ export default function App() {
           <div className="stats-grid">
             <div className="stat-card">
               <div className="stat-number gold">80%</div>
-              <div className="stat-label">of travelers watch hotel videos before booking</div>
-              <div className="stat-source">Google Travel</div>
+              <div className="stat-label">of consumers watch brand videos before making a purchase decision</div>
+              <div className="stat-source">Google Consumer Study</div>
             </div>
             <div className="stat-card">
               <div className="stat-number gold">3x</div>
@@ -94,6 +94,8 @@ export default function App() {
           </div>
 
           <div className="ad-types">
+
+            {/* Hotels & Resorts */}
             <div className="vertical-block">
               <div className="vertical-header">
                 <span className="vertical-icon">🏨</span>
@@ -106,7 +108,7 @@ export default function App() {
                 {[
                   { name: 'Room Reveal Ad', tag: 'CONVERSIONS', desc: 'Door opens — cinematic 8s sweep of suite interior. Ends on price overlay. Deployed on Booking.com, Instagram Stories, and YouTube pre-roll.' },
                   { name: 'Pool & Lobby Ambiance', tag: 'AWARENESS', desc: 'Golden-hour pool shot, smooth camera drift, ambient score. No voiceover. Pure mood. Used for Instagram Reels & TikTok top-of-funnel.' },
-                  { name: 'Seasonal Offer Spot', tag: 'PROMO', desc: '8s summer/winter visual + offer text overlay + CTA. Batch-generated in 10 variants per season. One template, 10 rooms.' },
+                  { name: 'Seasonal Offer Spot', tag: 'PROMO', desc: '8s summer/winter visual + offer text overlay + CTA. Batch-produced in 10 variants per season. One template, 10 rooms.' },
                   { name: 'Multilingual Brand Film', tag: 'BRAND', desc: '30s property story narrated in English, Hindi, and Arabic. One source video, three language markets.' },
                   { name: 'OTA Image-to-Video', tag: 'LOW COST', desc: 'Existing Booking.com/Expedia hero photos transformed into cinematic clips. No new shoot, no crew, no cost.' },
                   { name: 'Review-to-Reel', tag: 'TRUST', desc: 'Real guest quote rendered as animated text over property footage with background score. Social proof in 8 seconds. Runs on Instagram & Google Display.' },
@@ -125,11 +127,12 @@ export default function App() {
             <div className="storyboard-image">
               <div className="storyboard-label">Sample Storyboard · Hotels &amp; Resorts</div>
               <img
-                src="https://res.cloudinary.com/duqgxghmt/image/upload/v1780102331/image_7433b1c4_vyab2b.png"
+                src="https://res.cloudinary.com/duqgxghmt/image/upload/v1780124755/image_a8f15275_mliw9y.png"
                 alt="Hotel storyboard — Lobby Shot, Suite Reveal, Poolside"
               />
             </div>
 
+            {/* Restaurants & F&B */}
             <div className="vertical-block">
               <div className="vertical-header">
                 <span className="vertical-icon">🍽️</span>
@@ -140,7 +143,7 @@ export default function App() {
               </div>
               <div className="ad-grid">
                 {[
-                  { name: 'Signature Dish Reveal', tag: 'REEL', desc: 'Slow-motion pour, steam rising, fork cut — 8s food porn. Works for Instagram Stories, Zomato/Swiggy banners, Google Ads.' },
+                  { name: 'Signature Dish Reveal', tag: 'REEL', desc: 'Slow-motion pour, steam rising, fork cut — 8s food content. Works for Instagram Stories, Zomato/Swiggy banners, Google Ads.' },
                   { name: 'Table Ambiance Spot', tag: 'MOOD', desc: 'Candlelit table, ambient sound, warm tones. No dialogue. Targets fine-dining audiences on Meta and Pinterest.' },
                   { name: 'Chef Story Micro-Doc', tag: 'BRAND', desc: '15s: chef at work → plating → guest reaction. Professional narration in your brand voice. Used for brand building on YouTube & LinkedIn.' },
                   { name: 'Weekend Brunch Promo', tag: 'PROMO', desc: 'Batch of 6 variants — each with a different dish, same music, same CTA. Runs Friday–Sunday on paid social.' },
@@ -165,6 +168,118 @@ export default function App() {
                 alt="Restaurant storyboard — Exterior, Entrance, Wine service, Chef, Celebration, An Evening to Remember"
               />
             </div>
+
+            {/* Private Property Builders */}
+            <div className="vertical-block">
+              <div className="vertical-header">
+                <span className="vertical-icon">🏗️</span>
+                <div>
+                  <h3>Private Property Builders</h3>
+                  <p>High-impact video content that sells projects before the first brick is laid</p>
+                </div>
+              </div>
+              <div className="ad-grid">
+                {[
+                  { name: 'Project Walkthrough', tag: 'CONVERSIONS', desc: 'Cinematic fly-through of floor plans and renders transformed into immersive video tours. Deployed on Instagram, YouTube, and property portals.' },
+                  { name: 'Location Showcase', tag: 'AWARENESS', desc: 'Neighbourhood highlights, connectivity, and lifestyle context — 30s visual story that sells the address before the apartment.' },
+                  { name: 'Launch Offer Spot', tag: 'PROMO', desc: 'Pre-launch pricing, limited inventory, and CTA — batch-produced in multiple variants for each phase and unit type.' },
+                  { name: 'Builder Brand Film', tag: 'BRAND', desc: '60s legacy story — past projects, craftsmanship, testimonials — narrated in your brand tone across languages.' },
+                  { name: 'Render-to-Reel', tag: 'LOW COST', desc: 'Existing architectural renders and 3D visuals transformed into cinematic motion clips. No reshoots needed.' },
+                  { name: 'Testimonial Spot', tag: 'TRUST', desc: 'Buyer quote rendered as animated text over project footage. Social proof in 8 seconds. Runs on Meta and Google Display.' },
+                ].map(ad => (
+                  <div className="ad-card" key={ad.name}>
+                    <div className="ad-card-header">
+                      <span className="ad-name">{ad.name}</span>
+                      <span className={`ad-tag tag-${ad.tag.toLowerCase().replace(' ', '-')}`}>{ad.tag}</span>
+                    </div>
+                    <p>{ad.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="storyboard-image">
+              <div className="storyboard-label">Sample Storyboard · Private Property Builders</div>
+              <img
+                src="https://res.cloudinary.com/duqgxghmt/image/upload/v1780123758/image_be1dfc27_yeogue.png"
+                alt="Property builder storyboard"
+              />
+            </div>
+
+            {/* Private Clinics */}
+            <div className="vertical-block">
+              <div className="vertical-header">
+                <span className="vertical-icon">🏥</span>
+                <div>
+                  <h3>Private Clinics</h3>
+                  <p>Trust-building video content that brings patients through the door</p>
+                </div>
+              </div>
+              <div className="ad-grid">
+                {[
+                  { name: 'Clinic Walkthrough', tag: 'AWARENESS', desc: 'Warm, reassuring tour of consultation rooms, reception, and facilities. Builds trust before the first appointment.' },
+                  { name: 'Doctor Introduction', tag: 'BRAND', desc: '30s professional profile — credentials, specialisation, patient-first approach. Narrated in English, Hindi, or regional language.' },
+                  { name: 'Treatment Spotlight', tag: 'CONVERSIONS', desc: 'Procedure explained in 15s with on-screen text, before/after visuals, and a clear CTA. Runs on Meta and Google Search.' },
+                  { name: 'Patient Testimonial Reel', tag: 'TRUST', desc: 'Real patient quote over clinic footage with calm background score. Runs on Instagram, Google Display, and clinic website.' },
+                  { name: 'Health Awareness Spot', tag: 'PROMO', desc: 'Seasonal health tips tied to your specialisation — batch-produced for World Health Days, festive season, and monthly campaigns.' },
+                  { name: 'Offer & Consultation Ad', tag: 'PRODUCT', desc: 'Free consultation, health package pricing, or seasonal offer — 8s visual with CTA. Runs on Reels and Stories.' },
+                ].map(ad => (
+                  <div className="ad-card" key={ad.name}>
+                    <div className="ad-card-header">
+                      <span className="ad-name">{ad.name}</span>
+                      <span className={`ad-tag tag-${ad.tag.toLowerCase().replace(' ', '-')}`}>{ad.tag}</span>
+                    </div>
+                    <p>{ad.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="storyboard-image">
+              <div className="storyboard-label">Sample Storyboard · Private Clinics</div>
+              <img
+                src="https://res.cloudinary.com/duqgxghmt/image/upload/v1780123758/image_b120295d_nlieb7.png"
+                alt="Private clinic storyboard"
+              />
+            </div>
+
+            {/* Gym & Fitness */}
+            <div className="vertical-block">
+              <div className="vertical-header">
+                <span className="vertical-icon">💪</span>
+                <div>
+                  <h3>Gym &amp; Fitness</h3>
+                  <p>High-energy video content that turns followers into members</p>
+                </div>
+              </div>
+              <div className="ad-grid">
+                {[
+                  { name: 'Facility Tour', tag: 'AWARENESS', desc: 'Dynamic walkthrough of equipment, training zones, and amenities. Fast cuts, upbeat score. Runs on Instagram Reels and YouTube Shorts.' },
+                  { name: 'Trainer Spotlight', tag: 'BRAND', desc: '20s profile — expertise, style, transformation results. Builds personal connection before the first session.' },
+                  { name: 'Transformation Reel', tag: 'CONVERSIONS', desc: 'Before/after journey — member story in 30s with motivational narration and CTA. Highest-performing ad format for fitness brands.' },
+                  { name: 'Membership Offer', tag: 'PROMO', desc: 'New Year, summer, or festive membership deals — batch-produced in variants for each plan tier. Drives sign-ups on Meta and Google.' },
+                  { name: 'Class Highlight', tag: 'REEL', desc: '8s energy-packed cut from a live class — HIIT, yoga, Zumba, CrossFit. Runs daily to keep the feed active and aspirational.' },
+                  { name: 'Member Testimonial', tag: 'TRUST', desc: 'Real member quote over training footage. Authentic social proof that converts browsers into walk-ins.' },
+                ].map(ad => (
+                  <div className="ad-card" key={ad.name}>
+                    <div className="ad-card-header">
+                      <span className="ad-name">{ad.name}</span>
+                      <span className={`ad-tag tag-${ad.tag.toLowerCase().replace(' ', '-')}`}>{ad.tag}</span>
+                    </div>
+                    <p>{ad.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="storyboard-image">
+              <div className="storyboard-label">Sample Storyboard · Gym &amp; Fitness</div>
+              <img
+                src="https://res.cloudinary.com/duqgxghmt/image/upload/v1780123758/image_502050ee_zgykdp.png"
+                alt="Gym and fitness storyboard"
+              />
+            </div>
+
           </div>
         </section>
       )}
@@ -206,7 +321,8 @@ export default function App() {
           <h2>Choose Your Production Package</h2>
           <p className="section-intro">
             All packages deliver stitched video ads formatted for Instagram Reels, YouTube Shorts, Stories, and
-            paid social. You pay for results — not tools or software.
+            paid social. Works for any industry — hospitality, real estate, healthcare, fitness, and more.
+            You pay for results — not tools or software.
           </p>
 
           <CurrencyToggle currency={currency} setCurrency={setCurrency} />
@@ -223,7 +339,7 @@ export default function App() {
                 <li>Formatted for Reels, Stories, YouTube Shorts</li>
                 <li>Music & sound design — no voiceover</li>
                 <li>Daily delivery — publish the same day, every day</li>
-                <li>Covers both hotel/resort and F&amp;B ad types</li>
+                <li>Any industry vertical supported</li>
               </ul>
               <div className="plan-note">Best for brands launching daily social presence without narration.</div>
             </div>
@@ -239,7 +355,7 @@ export default function App() {
                 <li>English + Hindi + Arabic narration included</li>
                 <li>4 formats per video: Reels, Shorts, Stories, 16:9</li>
                 <li>Original background score composed per video</li>
-                <li>Batch variants — same template, multiple offers/rooms</li>
+                <li>Batch variants — same template, multiple offers/products</li>
                 <li>Daily delivery with platform scheduling guidance</li>
               </ul>
               <div className="plan-note">Best for brands wanting a consistent brand voice across all content.</div>
@@ -254,12 +370,12 @@ export default function App() {
                 <li>Full revision & edit service — unlimited feedback rounds</li>
                 <li>Dedicated brand voice cloned across all languages</li>
                 <li>Updates after edits — revised variants same day</li>
-                <li>Custom video style tuned to your property & brand</li>
+                <li>Custom video style tuned to your brand</li>
                 <li>Multi-language narration across all markets</li>
                 <li>Full pipeline: brief → publish, automated delivery</li>
                 <li>Dedicated account manager for daily briefs</li>
               </ul>
-              <div className="plan-note">Best for hotel chains and F&amp;B groups running multi-property campaigns.</div>
+              <div className="plan-note">Best for multi-location brands running campaigns across verticals.</div>
             </div>
           </div>
 
@@ -273,7 +389,7 @@ export default function App() {
       )}
 
       <footer className="site-footer">
-        <p>Rich Content Studio · Hospitality Vertical · 2024</p>
+        <p>Rich Content Studio · Digital Marketing Agency · 2024</p>
       </footer>
     </div>
   )
