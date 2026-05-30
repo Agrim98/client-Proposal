@@ -248,6 +248,30 @@ body {
 .tag-product     { background: #2a2a1a; color: #d9f99d; }
 .tag-seasonal    { background: #2a1a3a; color: #c4b5fd; }
 
+/* Storyboard images */
+.storyboard-image {
+  margin-bottom: 24px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--dark-border);
+}
+
+.storyboard-image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.storyboard-label {
+  background: var(--dark-card);
+  padding: 10px 16px;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border-bottom: 1px solid var(--dark-border);
+}
+
 /* Pipeline */
 .pipeline-steps {
   display: flex;

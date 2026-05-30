@@ -111,6 +111,14 @@ export default function App() {
               </div>
             </div>
 
+            <div className="storyboard-image">
+              <div className="storyboard-label">Sample Storyboard · Hotels &amp; Resorts</div>
+              <img
+                src="https://res.cloudinary.com/duqgxghmt/image/upload/v1780102331/image_7433b1c4_vyab2b.png"
+                alt="Hotel storyboard — Lobby Shot, Suite Reveal, Poolside, AI generation pipeline"
+              />
+            </div>
+
             <div className="vertical-block">
               <div className="vertical-header">
                 <span className="vertical-icon">🍽️</span>
@@ -137,6 +145,14 @@ export default function App() {
                   </div>
                 ))}
               </div>
+            </div>
+
+            <div className="storyboard-image">
+              <div className="storyboard-label">Sample Storyboard · Restaurants &amp; F&amp;B</div>
+              <img
+                src="https://res.cloudinary.com/duqgxghmt/image/upload/v1780102331/image_2ded65a_yxjxvn.png"
+                alt="Restaurant storyboard — Exterior, Entrance, Wine service, Chef, Celebration, An Evening to Remember"
+              />
             </div>
           </div>
         </section>
