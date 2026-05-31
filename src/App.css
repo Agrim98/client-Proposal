@@ -195,14 +195,16 @@ body {
 
 .vertical-header {
   display: flex;
-  align-items: flex-start;
-  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
   margin-bottom: 20px;
   padding-bottom: 18px;
   border-bottom: 1px solid var(--border);
 }
 
-.vertical-icon { font-size: 26px; line-height: 1; padding-top: 2px; }
+.vertical-icon { font-size: 30px; line-height: 1; }
 
 .vertical-header h3 {
   font-size: 17px;
