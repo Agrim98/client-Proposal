@@ -73,11 +73,6 @@ export default function App() {
               <div className="stat-label">average daily production cost vs {fmt(2000, currency)}–{fmt(10000, currency)} per video with traditional agencies</div>
               <div className="stat-source">Our Retainer Model</div>
             </div>
-            <div className="stat-card">
-              <div className="stat-number accent">10 min</div>
-              <div className="stat-label">from brand brief and existing assets to a finished, platform-ready video</div>
-              <div className="stat-source">Our Workflow</div>
-            </div>
           </div>
 
           <div className="insight-banner">
